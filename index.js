@@ -14,3 +14,20 @@ function isEvenOrOdd(number) {
 console.log(isEvenOrOdd(4));
 console.log(isEvenOrOdd(7));
 console.log(isEvenOrOdd('a'));
+
+//Example-3
+function countVowels(str){
+    const vowels = 'aeiouAEIOU';
+    let count = 0;
+   
+    for (let char of str){
+        if (vowels.includes(char)) {
+            count++;    
+        }
+        
+    }
+    return count;
+
+}
+const exampleString = "Hello, word!";
+console.log(countVowe(exampleString));

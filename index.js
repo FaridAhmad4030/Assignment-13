@@ -16,18 +16,33 @@ console.log(isEvenOrOdd(7));
 console.log(isEvenOrOdd('a'));
 
 //Example-3
-function countVowels(str){
-    const vowels = 'aeiouAEIOU';
-    let count = 0;
+// function countVowels(str){
+//     const vowels = 'aeiouAEIOU';
+//     let count = 0;
    
-    for (let char of str){
-        if (vowels.includes(char)) {
-            count++;    
-        }
+//     for (let char of str){
+//         if (vowels.includes(char)) {
+//             count++;    
+//         }
         
-    }
-    return count;
+//     }
+//     return count;
 
+// }
+// const exampleString = "Hello, word!";
+// console.log(CountVowe(exampleString));
+
+//EXample-4
+function isPalindrome(str){
+    if(typeof str !== 'string' || str.length === 0){
+        return false;
+    }
+
+       
+
+    const cleanStr = str.replace(/[^a-z0-9]/gi, '').tolowerCase();
+    return cleanStr === cleanStr.split('').revers().join('');
 }
-const exampleString = "Hello, word!";
-console.log(countVowe(exampleString));
+console.log(isPalindrome("A man, a plan , acanal: panama"));
+console.log(isPalindrome("Hello"));
+

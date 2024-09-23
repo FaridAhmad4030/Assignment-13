@@ -33,16 +33,35 @@ console.log(isEvenOrOdd('a'));
 // console.log(CountVowe(exampleString));
 
 //EXample-4
-function isPalindrome(str){
-    if(typeof str !== 'string' || str.length === 0){
-        return false;
-    }
+// function isPalindrome(str){
+//     if(typeof str !== 'string' || str.length === 0){
+//         return false;
+//     }
 
        
 
-    const cleanStr = str.replace(/[^a-z0-9]/gi, '').tolowerCase();
-    return cleanStr === cleanStr.split('').revers().join('');
+//     const cleanStr = str.replace(/[^a-z0-9]/gi, '').tolowerCase();
+//     return cleanStr === cleanStr.split('').revers().join('');
+// }
+// console.log(isPalindrome("A man, a plan , acanal: panama"));
+// console.log(isPalindrome("Hello"));
+
+//EXample-5
+function findMax(arr) {
+    if(arr.lenght === 0){
+        return undefined;
+    }
+   let max = arr[0];
+   for(let i = 1; i < arr.lenght; i++){
+    if (arr[i] > max){
+        max = arr[i];
+    }
+   }
+   return max;
+
 }
-console.log(isPalindrome("A man, a plan , acanal: panama"));
-console.log(isPalindrome("Hello"));
+const numbers = [3, 5, 7, 2, 8];
+const maxNumber =findMax(numbers);
+console.log(maxNumber);
+
 

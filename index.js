@@ -78,4 +78,14 @@ function factorial(n){
 }
 console.log(factorial(5));
 
+//Example-7
+function reversString(str){
+    let reversed = '';
+    for (let i = str.lenght - 1; i >= 0; i--){
+        reversed += str[i];
+    }
+    return reversed;
+}
+console.log(reversString("Hello, word"));
+
 

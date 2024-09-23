@@ -64,4 +64,18 @@ const numbers = [3, 5, 7, 2, 8];
 const maxNumber =findMax(numbers);
 console.log(maxNumber);
 
+// EXample-6
+function factorial(n){
+    if (n < 0) return undefined;
+    let result = 1;
+    let i = n;
+
+    while (i > 1){
+        result *= i;
+        i--;
+    }
+    return result;
+}
+console.log(factorial(5));
+
 
